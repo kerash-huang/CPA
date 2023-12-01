@@ -71,7 +71,7 @@ class CPAGlobal {
     //
     public static $SiteLang;
 
-    const CPA_API_VERSION = '3.0';
+    public static $CPA_API_VERSION = '3.0';
     //
     public static $ignoreValidKeyHash = false;
 

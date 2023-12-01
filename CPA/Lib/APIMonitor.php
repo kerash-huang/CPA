@@ -252,7 +252,7 @@ class APIMonitor {
 
     public static function GetMethodDataLog($Date, $controller = '', $action = '') {
         $tableName = "api_call_log_" . str_replace("-", "", $Date);
-        $condition = [];
+        $condition = array();
         if ($controller) {
             $condition["controller"] = $controller;
         }
