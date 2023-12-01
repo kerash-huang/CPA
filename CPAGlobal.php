@@ -71,7 +71,7 @@ class CPAGlobal {
      *
      * @var Member
      */
-    public static $WriteLogPath = __DIR__ . "/log/";
+    public static $WriteLogPath;
     public static $vardebug = false;
     public static $belong_site;
     //
@@ -82,6 +82,7 @@ class CPAGlobal {
     public static $ignoreValidKeyHash = false;
 
     public static function _init() {
+        self::$WriteLogPath = __DIR__ . '/log';
         $defaultTimezone = 'Asia/Taipei';
         if (isset(CPAConfig::$DefaultTimeZone) and CPAConfig::$DefaultTimeZone) {
             $defaultTimezone = CPAConfig::$DefaultTimeZone;
