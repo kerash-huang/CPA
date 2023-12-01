@@ -65,12 +65,6 @@ class CPAGlobal {
     public static $itdebug;
     // sitename
     public static $sitename;
-    //
-    // new member object
-    /**
-     *
-     * @var Member
-     */
     public static $WriteLogPath;
     public static $vardebug = false;
     public static $belong_site;
