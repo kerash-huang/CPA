@@ -37,9 +37,4 @@ class TestController extends APIBase {
         die();
     }
 
-    public function GameInst() {
-        $gameModel = DbGame::GetGameInstance(Input::Get("Game", "JDB"), '', CPAGlobal::$belong_site);
-        $res = $gameModel->GetBalance(Input::Get("PlayerId", 'CATKTEST01'));
-        return $res;
-    }
 }
