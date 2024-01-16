@@ -62,7 +62,7 @@ class Response {
             "Message" => $this->Message,
             "Value" => $this->Value,
             "ErrorCode" => $this->ErrorCode !== 0 ? "" . $this->ErrorCode : 0,
-            'Version' => \CPAGlobal::CPA_API_VERSION,
+            'Version' => \CPAGlobal::$CPA_API_VERSION,
         );
         if (!empty(Response::$MessageLangCode)) {
             $ResponseData['MsgLangCode'] = Response::$MessageLangCode;
